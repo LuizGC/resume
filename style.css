@@ -1,11 +1,16 @@
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+section {
+    border-bottom: 2px dotted;
 }
 
 .header-container {
     display: grid;
-    border-bottom: 2px dotted;
 }
 
 .header-container .left-half {
@@ -16,15 +21,12 @@ html, body {
     grid-column: 2;
 }
 
-.header-container .right-half div{
+.header-container .right-half div {
     margin: 0 0 7px 0;
     padding: 0;
     text-align: right;
 }
 
-.skills-container {
-    border-bottom: 2px dotted;
-}
 
 .skills-container p {
     margin: 0 0 30px 0;
@@ -37,3 +39,35 @@ html, body {
     padding: 10px;
     font-weight: bolder;
 }
+
+            
+ul {
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 20px 30px;
+  }
+      
+            
+            
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    height: 5px;
+    width: 5px;
+    border: 1px solid;
+    border-width: 5px 5px 0 0;
+    transform: rotate(45deg);
+  }
+      
+  
+      
+    
+   
